@@ -37,7 +37,8 @@ class StepCounterModule(
     }
 
     private val appContext: ReactApplicationContext = reactContext
-    private lateinit var sensorManager: SensorManager
+    // private lateinit var sensorManager: SensorManager
+    private var sensorManager: SensorManager
     private val stepsOK: Boolean
         get() = checkSelfPermission(appContext, STEP_COUNTER) == PERMISSION_GRANTED
     private val accelOK: Boolean
